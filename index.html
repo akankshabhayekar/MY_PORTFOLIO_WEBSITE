@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/008211853c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/akanksha_logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Roles</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Hi there,</p>
+            <h1>I'm <span>Akanksha</span><br> from Maharashtra</h1>
+
+
+        </div>
+    </div>
+
+
+</div>
+<!-------------------------about------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/akanksha.jpeg">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Highly motivated student with a passion for software engineering and strong foundation in web development technologies such as HTML, CSS, JavaScript and Node js. Proven ability to learn them quickly and apply them to real-world problems. Seeking an entry-level position where I can use my skills and knowlege to contribute to team and make a positive impact on the company.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C++, Python and JavaScript</li>
+                        <li><span>Full-Stack Web Development</span><br>Technologies such as HTML, CSS, JavaScript, Node.js, Express.js and  Rest APIs</li>
+                        <li><span>Databases</span><br>SQL databases like MySQL OR NoSQL databases like MongoDb</li>
+                        <li><span>Version Control System</span><br>Git and Github</li>
+                        <li><span>IDEs and platforms</span><br>Visual Studio, Spyder, Linux, Google Collab and Jupyter Notebook</li>
+                        <li><span>Tools, libraries and other</span><br>Numpy, Pandas, OpenCV, Matplotlib, Seaborn, Scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Codechef</span><br>Solved 500+ problems</li>
+                        <li><span>Leetcode</span><br>Solved 200+ problems</li>
+                        <li><span>JEE Advanced</span><br>Secured 3412 OBC-NCL Rank</li>
+                        <li><span>International Mathematical Olympaid</span><br>Gold Medal</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-present</span><br>Btech in data science and engineering, IIT Mandi<br> Cgpa: 7.24</li>
+                        <li><span>2021</span><br>12th from Mallick Junior College, Aurangabad<br>Percentage: 92.5</li>
+                        <li><span>2019</span><br>10th from Rose Buds English School, Aurangabad<br>Percentage: 91.8</li>
+                        
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-----------------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Roles</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h2>NSS Volunteer</h2>
+                <p>As a dedicated member of the National Service Scheme (NSS), I have actively contributed to various community service such as social welfare, community development, environmental conservation, etc. My volunteer work with NSS has provided me with valuable opportunities to engage with diverse communities, develop leadership skills, and make a positive impact on society.</p>
+                <a href="https://students.iitmandi.ac.in/main/social_consciousness/index.html">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h2>Core Team Member, SPICMACAY</h2>
+                <p>As a core team member of SPICMACAY, I have been actively involved in fostering a deeper appreciation for Indian classical music and culture among youth. SPICMACAY's mission to promote traditional art forms and cultural heritage aligns closely with my own passion for preserving and sharing the rich cultural legacy of India.</p>
+                <a href="https://spicmacay.org/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h2>Mentor, GCS</h2>
+                <p>As a mentor with the Guidance and Counselling Service (GCS), I have had the privilege of welcoming and guiding new students as they embark on their college journey. Serving as a mentor has provided me with a meaningful opportunity to make a positive impact on the lives of others, support their personal and academic growth, and foster a sense of belonging within our college community.</p>
+                <a href="https://research.iitmandi.ac.in/gcs/">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-----------------------portfolio ------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>URL Shortener</h3>
+                    <p>Welcome to our URL Shortener! Our aims to simplify the process of sharing web addresses, making it easier and more convenient for users to share content across various platforms while saving valuable space and enhancing readability.</p>
+                    <a href="https://github.com/akankshabhayekar/URL-SHORTENER"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/5202305 (2).jpg">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>Welcome to our Weather App! With our app, you can expect accurate forecasts, real-time updates, and personalized features to suit your needs. Let's weather the storms together, one forecast at a time</p>
+                    <a href="https://github.com/akankshabhayekar/Weather-App"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/digit.jpg">
+                <div class="layer">
+                    <h3>Handwritten Digit Detection</h3>
+                    <p>Handwritten digit detection employs machine learning algorithms allows you to recognize and classify handwritten digits, finding applications in OCR, postal services, and automated form processing.</p>
+                    <a href="https://youtu.be/-gMjCznEPIs?si=H6p53_1c22MSA_Mk"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <p>Welcome to Music Player! This is designed to offer music lovers a feature-rich platform that combines functionality, usability, and style, allowing users to enjoy their favorite tunes anytime, anywhere.</p>
+                    <a href="https://github.com/akankshabhayekar/Music-Player"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        
+        <button oneclick="toggleVisibility()" class="btn">See More</button> 
+
+    </div>
+</div>
+
+<!------------contact ------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>akankshabhayekar@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 8177936098</p>
+                <div class="social-icons">
+                    <a href="https://github.com/akankshabhayekar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/akanksha_1148"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/akanksha-bhayekar-36ab29296/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Akanksha_B21148.pdf" download class="btn btn2">Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Akanksha. Made with <i class="fas fa-heart"></i></p>
+
+    </div>
+
+
+</div>
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzQXAuftqhCv_-Un1z7nk26o_JKN8SVGWerdoYm2DpLNveQy14dFkqwm8cPxLjtGEVf4w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>    
+</body>
+</html>
